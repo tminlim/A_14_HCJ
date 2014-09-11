@@ -1,0 +1,198 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(#fff, #eee);
+	overflow: hidden;
+}
+
+#ground {
+height: 550px;
+width: 450px;
+position: absolute;
+top: 80px;
+/*overflow: hidden;*/
+left: 35%;
+margin: 0 auto;
+}
+.coreChar {
+	position: relative;
+}
+
+.char {
+	height: 450px;
+	margin-bottom: 50px;
+	overflow: hidden
+}
+
+.heart {
+ transition: all 250ms;
+}
+
+.ear {
+	position: absolute;
+	transform:rotate3d(0,0,1,12deg) translate3d(20px, 10px, 0);
+}
+.ear > img {
+	width: 50px;
+	height: auto;
+}
+
+.mouth {
+position: absolute;
+transform: rotate3d(0,0,1,7deg) translate3d(120px, 140px, 0);
+}
+
+.mouth > img {
+	width: 280px;
+	height: auto;
+}
+
+.eye > img {
+	width: 57px;
+	height: auto;
+}
+
+.char.left {
+	position: absolute;
+	transform: translate3d(180px,20px,0);
+}
+
+.left {
+position: absolute;
+transform: translate3d(220px,10px,0);
+}
+
+.right {
+transform: translate3d(350px,20px,0);
+}
+
+.on {
+transition-timing-function: cubic-bezier(.05,.59,.51,.93);
+}
+
+.on .ear {
+transform: scale(0.8) rotate3d(0,0,1,30deg) translate3d(230px,270px,0);
+}
+
+.on .mouth {
+transform: scale(0.8) rotate3d(0,0,1,15deg) translate3d(220px,400px,0);
+}
+
+.on .left {
+transform: scale(0.8) translate3d(220px,370px,0);
+}
+
+.on .right {
+transform: scale(0.8) translate3d(320px,370px,0);
+}
+
+.on .bUp {
+content: url(../img/happy_up.png);
+transform: scale(0.4) translate3d(-600px,-390px,0px);
+}
+
+.on .bCenterLeft {
+content: url(../img/happy_center_l.png);
+transform: scale(0.43) translate3d(140px,-780px,0px);
+}
+
+.on .bCenterRight {
+content: url(../img/happy_center_r.png);
+transform: scale(0.43) translate3d(20px,-1450px,0px);
+}
+
+.on .bBottom {
+
+}
+
+#inputArea {
+height: 70px;
+padding: 0px 0px 0px 70px;
+}
+
+.inputGroup {
+display:inline-block;
+vertical-align: middle;
+float: left;
+}
+
+.inputform {
+width:220px;
+}
+
+input[type="text"] {
+font-size: 3.3em;
+line-height: 70px;
+height: 70px;
+padding-bottom: 5px;
+width: 220px;
+}
+
+input#txtBox::-webkit-input-placeholder {
+  color: #908681;
+  font-size: 17px;
+  /*text-transform:uppercase;*/
+}
+input#txtBox:-moz-placeholder {
+  color: #908681;
+  font-size: 17px;
+}
+input#txtBox:-ms-input-placeholder{
+  color: #908681;
+  font-size: 17px;
+}
+#inputArea .btn {
+padding: 0;
+}
+
+.btn {
+width: 20%;
+box-sizing: border-box;
+margin: 0;
+border: 0;
+overflow: hidden;
+background-color: #FF4C4C;
+border-radius: 1px;
+height: 100%;
+}
+
+#inputArea .btn span {
+height: 45px;
+line-height: 45px;
+color: #B61111;
+font-size: 3em;
+font-weight: 900;
+}
+
+.btn:hover {
+background:#B61111;
+opacity:1;
+}
+
+#inputArea .btn span .effectShadow{
+color:#fff;
+}
+
+.controlForm {
+box-sizing: border-box;
+border-radius: 2px;
+padding: 4px 25px;
+background-color: #dadcdd;
+color: #FF2465;;
+vertical-align: middle;
+font-size:0.98em;
+border: 0;
+}
+
+.controlForm:focus {
+outline:0;
+}
+
+.controlForm:active, .controlForm:focus {
+background-color: #fff;
+border: 1px solid #d5d7d8;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
